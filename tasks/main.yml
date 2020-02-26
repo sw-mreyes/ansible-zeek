@@ -166,7 +166,7 @@
 
 ## OR http://serverfault.com/questions/421995/disable-tcp-offloading-completely-generically-and-easily
 - name: check network card checksum offloading state
-  command: ethtool --show-offload eth0
+  command: ethtool --show-offload {{ bro_nodes_if }}
   register: ethtool
   changed_when: false
 ## FIXME! not working on digitalocean droplet: got: 'rx-checksumming: on [fixed] tx-checksumming: off' and can't change
