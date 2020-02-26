@@ -1,0 +1,18 @@
+---
+broids_packages_deps:
+    - default-mysql-server
+    - php-mysql
+    - python-pip
+    - python-sqlalchemy
+    - python-mysqldb
+    - ca-certificates
+    - python-openssl
+    - cron
+## bro-pdns
+    - python-pymysql
+## trace-summary
+    - python-subnettree
+## pip upgrade
+    - default-libmysqlclient-dev
+## offloading
+    - ethtool
